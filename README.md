@@ -49,9 +49,7 @@ This project aims to implement progressively more advanced verification methodol
 - [ ] SystemC test implementation
 
 
-## Getting Started
-
-### tools
+## Tools
 
 - VCS simulator
 - GTKWave for viewing waveforms
