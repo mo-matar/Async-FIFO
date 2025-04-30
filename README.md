@@ -54,3 +54,7 @@ This project aims to implement progressively more advanced verification methodol
 - VCS simulator
 - GTKWave for viewing waveforms
 
+---
+## References
+
+[Simulation and Synthesis Techniques for Asynchronous FIFO Design](http://www.sunburst-design.com/papers/CummingsSNUG2002SJ_FIFO1.pdf#page=17.09)
