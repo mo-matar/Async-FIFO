@@ -41,12 +41,12 @@ This project aims to implement progressively more advanced verification methodol
 
 ### Verification Progress Checklist
 
+- [x] RTL design implementation and understanding
 - [x] Basic functional testing (conventional testbench)
 - [ ] Interface-based verification
 - [ ] Implement monitors, checkers, and scoreboard
 - [ ] UVM (Universal Verification Methodology) implementation
 - [ ] SystemC test implementation
-- [x] RTL design implementation
 
 
 ## Getting Started
