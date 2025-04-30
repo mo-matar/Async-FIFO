@@ -1,0 +1,924 @@
+$date
+	Wed Apr 30 10:52:06 2025
+$end
+
+$version
+	Synopsys VCS version U-2023.03-SP2_Full64
+$end
+
+$timescale
+	1ns
+$end
+
+$comment Csum: 1 74091d1dcdc88294 $end
+
+
+$scope module async_fifo_tb $end
+$var reg 1 ! write_clk $end
+$var reg 1 " read_clk $end
+$var reg 1 # reset_read $end
+$var reg 1 $ reset_write $end
+$var reg 1 % write_en $end
+$var reg 1 & read_en $end
+$var reg 8 ' write_data [7:0] $end
+$var reg 8 ( read_data [7:0] $end
+$var reg 1 ) full $end
+$var reg 1 * empty $end
+$var reg 8 + expected_data [7:0] $end
+
+$scope begin unnamed$$_vcs_4 $end
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_0 $end
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_1 $end
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_2 $end
+$upscope $end
+
+
+$scope begin unnamed$$_vcs_3 $end
+$upscope $end
+
+
+$scope module dut $end
+$var reg 1 ! write_clk $end
+$var reg 1 " read_clk $end
+$var reg 1 # reset_read $end
+$var reg 1 $ reset_write $end
+$var reg 1 % write_en $end
+$var reg 1 & read_en $end
+$var reg 8 ' write_data [7:0] $end
+$var reg 8 ( read_data [7:0] $end
+$var reg 1 ) full $end
+$var reg 1 * empty $end
+$var reg 4 , read_ptr [3:0] $end
+$var reg 4 - read_ptr_grey [3:0] $end
+$var reg 4 . write_ptr [3:0] $end
+$var reg 4 / write_ptr_grey [3:0] $end
+
+$scope module write_ptr_gen $end
+$var reg 1 ! write_clk $end
+$var reg 1 $ write_reset $end
+$var reg 1 % write_en $end
+$var reg 4 - read_ptr_grey [3:0] $end
+$var reg 4 . write_ptr [3:0] $end
+$var reg 4 / write_ptr_grey [3:0] $end
+$var reg 1 ) full $end
+$var reg 4 0 read_ptr_unsafe_grey [3:0] $end
+$var reg 4 1 read_ptr_safe_grey [3:0] $end
+$var reg 4 2 write_ptr_next [3:0] $end
+$var reg 4 3 write_ptr_next_grey [3:0] $end
+$var reg 1 4 full_condition $end
+
+$scope begin synchronizer_process $end
+$upscope $end
+
+
+$scope begin full_flag_process $end
+$upscope $end
+
+
+$scope begin write_ptr_process $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module read_ptr_gen $end
+$var reg 1 " read_clk $end
+$var reg 1 # read_reset $end
+$var reg 1 & read_en $end
+$var reg 4 / write_ptr_grey [3:0] $end
+$var reg 1 * empty $end
+$var reg 4 , read_ptr [3:0] $end
+$var reg 4 - read_ptr_grey [3:0] $end
+$var reg 4 5 write_ptr_unsafe_grey [3:0] $end
+$var reg 4 6 write_ptr_safe_grey [3:0] $end
+$var reg 4 7 read_ptr_next [3:0] $end
+$var reg 4 8 read_ptr_next_grey [3:0] $end
+$var reg 1 9 empty_condition $end
+
+$scope begin synchronizer_process $end
+$upscope $end
+
+
+$scope begin empty_flag_process $end
+$upscope $end
+
+
+$scope begin read_ptr_process $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module queue_mem_inst $end
+$var reg 1 ! write_clk $end
+$var reg 1 " read_clk $end
+$var reg 1 % write_en $end
+$var reg 1 & read_en $end
+$var reg 8 ' write_data [7:0] $end
+$var reg 8 ( read_data [7:0] $end
+$var reg 1 ) full $end
+$var reg 1 * empty $end
+$var reg 4 . write_ptr [3:0] $end
+$var reg 4 , read_ptr [3:0] $end
+
+$scope begin write_fifo_process $end
+$upscope $end
+
+
+$scope begin read_fifo_process $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+1*
+19
+0)
+04
+0"
+0&
+0#
+0$
+0!
+0%
+bxxxxxxxx +
+bxxxxxxxx (
+b0000 ,
+b0000 -
+b0000 7
+b0000 8
+b0000 1
+b0000 0
+b00000000 '
+b0000 .
+b0000 /
+b0000 2
+b0000 3
+b0000 6
+b0000 5
+$end
+#5
+1!
+#8
+1"
+#10
+0!
+#15
+1!
+#16
+0"
+#20
+0!
+#24
+1"
+#25
+1!
+#30
+0!
+#32
+0"
+#35
+1!
+#40
+1"
+0!
+#45
+1!
+#48
+0"
+#50
+1#
+1$
+0!
+#55
+1!
+#56
+1"
+#60
+0!
+#64
+0"
+#65
+1!
+#70
+1%
+0!
+b0001 2
+b0001 3
+#72
+1"
+#75
+1!
+b00000001 '
+b0001 .
+b0001 /
+b0010 2
+b0011 3
+#76
+0%
+b0001 2
+b0001 3
+#80
+0"
+0!
+#85
+1!
+1%
+b0010 2
+b0011 3
+#88
+1"
+b0001 5
+#90
+0!
+#95
+1!
+b00000010 '
+b0010 .
+b0011 /
+b0011 2
+b0010 3
+#96
+0"
+0%
+b0010 2
+b0011 3
+#100
+0!
+#104
+1"
+b0011 5
+b0001 6
+09
+#105
+1!
+1%
+b0011 2
+b0010 3
+#110
+0!
+#112
+0"
+#115
+1!
+b00000011 '
+b0011 .
+b0010 /
+b0100 2
+b0110 3
+#116
+0%
+b0011 2
+b0010 3
+#120
+1"
+0!
+b0010 5
+b0011 6
+0*
+#125
+1!
+1%
+b0100 2
+b0110 3
+#128
+0"
+#130
+0!
+#135
+1!
+b00000100 '
+b0100 .
+b0110 /
+b0101 2
+b0111 3
+#136
+1"
+0%
+b0100 2
+b0110 3
+b0110 5
+b0010 6
+#140
+0!
+#144
+0"
+#145
+1!
+1%
+b0101 2
+b0111 3
+#150
+0!
+#152
+1"
+b0110 6
+#155
+1!
+b00000101 '
+b0101 .
+b0111 /
+b0110 2
+b0101 3
+#156
+0%
+b0101 2
+b0111 3
+#160
+0"
+0!
+#165
+1!
+1%
+b0110 2
+b0101 3
+#168
+1"
+b0111 5
+#170
+0!
+#175
+1!
+b00000110 '
+b0110 .
+b0101 /
+b0111 2
+b0100 3
+#176
+0"
+0%
+b0110 2
+b0101 3
+#180
+0!
+#184
+1"
+b0101 5
+b0111 6
+#185
+1!
+1%
+b0111 2
+b0100 3
+#190
+0!
+#192
+0"
+#195
+1!
+b00000111 '
+b0111 .
+b0100 /
+b1000 2
+b1100 3
+14
+#196
+0%
+b0111 2
+b0100 3
+04
+#200
+1"
+0!
+b0100 5
+b0101 6
+#205
+1!
+1%
+b1000 2
+b1100 3
+14
+#208
+0"
+#210
+0!
+#215
+1!
+b00001000 '
+1)
+b1000 .
+b1100 /
+#216
+1"
+0%
+b1100 5
+b0100 6
+#220
+0!
+#224
+0"
+#225
+1!
+1%
+#230
+0!
+#232
+1"
+b1100 6
+#235
+1!
+b00001001 '
+#236
+0%
+#240
+0"
+0!
+#245
+1!
+1%
+#248
+1"
+#250
+0!
+#255
+1!
+b00001010 '
+#256
+0"
+0%
+#260
+0!
+#264
+1"
+#265
+1!
+1%
+#270
+0!
+#272
+0"
+#275
+1!
+b00001011 '
+#276
+0%
+#280
+1"
+0!
+#285
+1!
+1%
+#288
+0"
+#290
+0!
+#295
+1!
+b00001100 '
+#296
+1"
+0%
+#300
+0!
+#304
+0"
+#305
+1!
+1%
+#310
+0!
+#312
+1"
+#315
+1!
+b00001101 '
+#316
+0%
+#320
+0"
+0!
+#325
+1!
+1%
+#328
+1"
+#330
+0!
+#335
+1!
+b00001110 '
+#336
+0"
+0%
+#340
+0!
+#344
+1"
+#345
+1!
+1%
+#350
+0!
+#352
+0"
+#355
+1!
+b00001111 '
+#356
+0%
+#360
+1"
+0!
+#365
+1!
+1%
+#368
+0"
+#370
+0!
+#375
+1!
+b00010000 '
+#376
+1"
+0%
+#380
+0!
+#384
+0"
+#385
+1!
+#390
+0!
+#392
+1"
+#395
+1!
+#400
+0"
+0!
+#405
+1!
+#408
+1"
+#410
+0!
+#415
+1!
+#416
+0"
+#420
+0!
+#424
+1"
+#425
+1!
+#430
+0!
+#432
+0"
+#435
+1!
+#440
+1"
+0!
+#445
+1!
+#448
+0"
+#450
+0!
+#455
+1!
+#456
+1"
+#460
+1&
+0!
+b0001 7
+b0001 8
+b00000001 (
+#464
+0"
+#465
+1!
+#470
+0!
+#472
+1"
+b00000001 +
+0&
+b0000 7
+b0000 8
+b0001 ,
+b0001 -
+b0001 7
+b0001 8
+#475
+1!
+b0001 0
+#480
+0"
+0!
+#485
+1!
+b0001 1
+04
+#488
+1"
+1&
+b0010 7
+b0010 8
+b0011 8
+b00000010 (
+#490
+0!
+#495
+1!
+0)
+#496
+0"
+#500
+0!
+#504
+1"
+b00000010 +
+0&
+b0001 7
+b0000 8
+b0001 8
+b0010 ,
+b0011 -
+b0010 7
+b0010 8
+b0011 8
+#505
+1!
+b0011 0
+#510
+0!
+#512
+0"
+#515
+1!
+b0011 1
+#520
+1"
+0!
+1&
+b0011 7
+b0010 8
+b00000011 (
+#525
+1!
+#528
+0"
+#530
+0!
+#535
+1!
+#536
+1"
+b00000011 +
+0&
+b0010 7
+b0011 8
+b0011 ,
+b0010 -
+b0011 7
+b0010 8
+#540
+0!
+#544
+0"
+#545
+1!
+b0010 0
+#550
+0!
+#552
+1"
+1&
+b0100 7
+b0101 8
+b0110 8
+b00000100 (
+#555
+1!
+b0010 1
+#560
+0"
+0!
+#565
+1!
+#568
+1"
+b00000100 +
+0&
+b0011 7
+b0001 8
+b0010 8
+b0100 ,
+b0110 -
+b0100 7
+b0101 8
+b0110 8
+#570
+0!
+#575
+1!
+b0110 0
+#576
+0"
+#580
+0!
+#584
+1"
+1&
+b0101 7
+b0111 8
+b00000101 (
+#585
+1!
+b0110 1
+#590
+0!
+#592
+0"
+#595
+1!
+#600
+1"
+0!
+b00000101 +
+0&
+b0100 7
+b0110 8
+b0101 ,
+b0111 -
+b0101 7
+b0111 8
+#605
+1!
+b0111 0
+#608
+0"
+#610
+0!
+#615
+1!
+b0111 1
+#616
+1"
+1&
+b0110 7
+b0100 8
+b0101 8
+b00000110 (
+#620
+0!
+#624
+0"
+#625
+1!
+#630
+0!
+#632
+1"
+b00000110 +
+0&
+b0101 7
+b0110 8
+b0111 8
+b0110 ,
+b0101 -
+b0110 7
+b0100 8
+b0101 8
+#635
+1!
+b0101 0
+#640
+0"
+0!
+#645
+1!
+b0101 1
+#648
+1"
+1&
+b0111 7
+b0100 8
+b00000111 (
+#650
+0!
+#655
+1!
+#656
+0"
+#660
+0!
+#664
+1"
+b00000111 +
+0&
+b0110 7
+b0101 8
+b0111 ,
+b0100 -
+b0111 7
+b0100 8
+#665
+1!
+b0100 0
+#670
+0!
+#672
+0"
+#675
+1!
+b0100 1
+#680
+1"
+0!
+1&
+b1000 7
+b1011 8
+b1100 8
+19
+b00001000 (
+#685
+1!
+#688
+0"
+#690
+0!
+#695
+1!
+#696
+1"
+b00001000 +
+0&
+b0111 7
+b0011 8
+b0100 8
+09
+1*
+b1000 ,
+b1100 -
+b1000 7
+b1011 8
+b1100 8
+19
+#700
+0!
+#704
+0"
+#705
+1!
+b1100 0
+#710
+0!
+#712
+1"
+1&
+#715
+1!
+b1100 1
+#720
+0"
+0!
+#725
+1!
+#728
+1"
+0&
+#730
+0!
+#735
+1!
+#736
+0"
+#740
+0!
+#744
+1"
+#745
+1!
+#750
+0!
+#752
+0"
+#755
+1!
+#760
+1"
+0!
+#765
+1!
