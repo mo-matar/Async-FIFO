@@ -2,7 +2,7 @@
 
 This repository contains an implementation of an asynchronous FIFO (First-In-First-Out) buffer designed for clock domain crossing applications. This project was created as part of my university coursework in Design Verification, with the aim of implementing and verifying a fundamental digital design component used in multi-clock domain systems.
 
-![Asynchronous FIFO Diagram](img/async_fifo_diagram.png)
+![Asynchronous FIFO Diagram](img/async_fifo_diagram.png) 
 
 ## Project Overview
 
