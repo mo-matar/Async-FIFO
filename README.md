@@ -42,6 +42,7 @@ This project aims to implement progressively more advanced verification methodol
 ### Verification Progress Checklist
 
 - [x] RTL design implementation and understanding
+- [ ] CRC for error detection and reliability 
 - [x] Basic functional testing (conventional testbench)
 - [ ] Interface-based verification
 - [ ] Implement monitors, checkers, and scoreboard
